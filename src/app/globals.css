@@ -6,9 +6,9 @@
 
 /* set color variables   */
 @theme {
-  --color-primary: #D4B296;
+  --color-primary: #d4b196;
   --color-secondary: #1E1C1C;
-  --color-neutral: #777;
+  --color-neutral: #bdbdbd;
   --color-extraDark: #212121;
   --color-dark: #323232;
 } 
