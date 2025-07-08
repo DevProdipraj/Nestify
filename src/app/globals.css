@@ -21,3 +21,11 @@ body{
   margin-inline: auto;
   padding-inline: 2rem;
 }
+
+/* 
+.slick-prev:before,
+.slick-next:before {
+  color: black;        
+  font-size: 30px;
+  z-index: 1000000;
+} */

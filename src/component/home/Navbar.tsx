@@ -46,13 +46,13 @@ const Navbar = () => {
                 <div className="flex items-center justify-center md:space-x-5">
                   <IoSearchSharp
                     size={25}
-                    className="text-[#6a6a6a] font-bold"
+                    className="text-[#6a6a6a] font-bold cursor-pointer"
                   />
-                  <FiHeart size={25} className="text-[#6a6a6a] font-bold" />
+                  <FiHeart size={25} className="text-[#6a6a6a] font-bold cursor-pointer" />
                 </div>
               </div>
-              <IoCartOutline size={25} className="text-[#6a6a6a] font-bold" />
-              <FaRegUser size={25} className="text-[#6a6a6a] font-bold" />
+              <IoCartOutline size={25} className="text-[#6a6a6a] font-bold cursor-pointer" />
+              <FaRegUser size={25} className="text-[#6a6a6a] font-bold cursor-pointer" />
             </div>
 
             {/* Hamburger Button */}

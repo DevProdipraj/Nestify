@@ -1,6 +1,6 @@
 import React from "react";
 import { FiPhone } from "react-icons/fi";
-const Top = () => {
+const NavbarTop = () => {
   return (
     <div className="bg-dark text-gray-300 ">
       <div className="container   flex items-center justify-end md:justify-between py-2">
@@ -33,4 +33,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+export default NavbarTop;
