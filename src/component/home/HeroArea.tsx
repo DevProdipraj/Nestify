@@ -15,37 +15,29 @@ const HeroArea = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true,
+    arrows: false,  
+    pauseOnHover: true,
   };
 
   const slides = [
-    {
-      id: 1,
-      image: "/home/furniture_one_1.png",
-    },
-    {
-      id: 2,
-      image: "/home/furniture_one_2.png",
-    },
+    { id: 1, image: "/home/furniture_one_1.png" },
+    { id: 2, image: "/home/furniture_one_2.png" },
   ];
 
   return (
-    <div className="hero-area  max-w-[1850px] mx-auto z-50">
+    <div className="hero-area w-full relative overflow-hidden mt-5 md:mt-0">
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="w-screen h-40vh">
+          <div key={slide.id} className="relative w-full h-[20vh] md:h-[50vh] lg:h-[60vh]">
             <Link href="/product">
               <Image
                 src={slide.image}
-                alt="Furniture Image"
-                width={1920}
-                height={1024}
-                className="w-full h-full  object-contain"
+                alt="Furniture"
+                layout="fill"
+                objectFit="containt"
+                className="w-full h-full"
               />
-
             </Link>
-            {/* Overlay */}
-            {/* <div className="absolute inset-0 bg-[#00000011] opacity-50"></div> */}
           </div>
         ))}
       </Slider>

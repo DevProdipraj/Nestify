@@ -34,7 +34,7 @@ const SpecialProducts = () => {
           <h3 className="text-primary text-md md:text-xl opacity-70">
             Exclusive Products
           </h3>
-          <h2 className="text-extraDark text-xl md:text-4xl font-bold my-2 relative before:w-16 before:h-1.5 before:bg-primary before:absolute before:left-[50%] before:translate-x-[-50%] before:top-12">
+          <h2 className="text-extraDark text-xl md:text-4xl font-bold my-2 relative before:w-16 before:h-1.5 before:bg-primary before:absolute before:left-[50%] before:translate-x-[-50%] before:top-8 md:before:top-12">
             SPECIAL PRODUCTS
           </h2>
         </div>

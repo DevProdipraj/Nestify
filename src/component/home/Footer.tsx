@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaTwitter,
@@ -12,16 +13,16 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-gray-50 py-12 ">
-      <div className="container">
+      <div className=" md:container">
         {/* Newsletter Section */}
         <div className=" mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <div className="bg-white rounded-lg p-8 shadow-sm">
+          <div className="bg-neutral rounded-lg p-8 shadow-sm">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
               <div className="text-center lg:text-left">
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                <h2 className="text-xl md:text-2xl font-bold text-dark  mb-2">
                   KNOW IT ALL FIRST!
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm md:text-xl">
                   Never Miss Anything From Store By Signing Up To Our
                   Newsletter.
                 </p>
@@ -30,9 +31,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter Email Address"
-                  className="px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 flex-1 lg:w-80"
+                  className="px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary flex-1 lg:w-80"
                 />
-                <button className="px-8 py-3 bg-orange-200 hover:bg-orange-300 text-gray-800 font-medium rounded-md transition-colors duration-200">
+                <button className="px-8 py-3 bg-primary hover:bg-primary text-gray-800 font-medium rounded-md transition-colors duration-200">
                   SUBSCRIBE
                 </button>
               </div>
@@ -46,12 +47,15 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <div className="flex items-center mb-4">
-                <Image
-                  src="/brandIcon.png"
-                  alt="Brand Logo"
-                  width={200}
-                  height={100}
-                />
+                <Link href="/">
+                  <Image
+                    src="/brandIcon.png"
+                    alt="Brand Logo"
+                    width={180}
+                    height={75}
+                    className=" cursor-pointer"
+                  />
+                </Link>
               </div>
               <p className="text-gray-600 mb-6 text-sm leading-relaxed">
                 Discover the latest trends and enjoy seamless shopping with our
@@ -245,20 +249,20 @@ export default function Footer() {
                 <div className="flex items-start space-x-3">
                   <FaMapMarkerAlt className="w-4 h-4 text-gray-500 mt-1 flex-shrink-0" />
                   <div className="text-sm text-gray-600">
-                    <p>Multikart Demo Store, Demo Store</p>
-                    <p>India 345-659</p>
+                    <p>Nestify Store, Banani</p>
+                    <p>Dhaka-1216</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FaPhone className="w-4 h-4 text-gray-500 flex-shrink-0" />
                   <span className="text-sm text-gray-600">
-                    Call Us: 123-456-7898
+                    Call Us: +008 01785-427890
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FaEnvelope className="w-4 h-4 text-gray-500 flex-shrink-0" />
                   <span className="text-sm text-gray-600">
-                    Email Us: Support@Multikart.Com
+                    Email Us: support@nextify.Com
                   </span>
                 </div>
               </div>
@@ -267,9 +271,11 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom  */}
-            <div className="text-center pt-10 pb-5">
-               <p className="text-gray-600 hover:text-gray-900 text-sm transition-colors duration-200">Copyright &copy; 2025 Dev Prodip  . All rights reserved.</p>
-            </div>
+        <div className="text-center pt-10 pb-5">
+          <p className="text-gray-600 hover:text-gray-900 text-sm transition-colors duration-200">
+            Copyright &copy; 2025 Dev Prodip . All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

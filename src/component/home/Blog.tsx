@@ -29,14 +29,14 @@ export default function Blog() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-gray-400 text-lg mb-2">Recent Story</p>
-          <h2 className="text-4xl font-bold text-gray-900">LATEST BLOG</h2>
-          <div className="w-16 h-0.5 bg-orange-400 mx-auto mt-4"></div>
+          <h2 className="text-xl md:text-4xl font-bold text-gray-900 relative  before:w-16 before:h-1.5 before:bg-primary before:absolute before:left-[50%] before:translate-x-[-50%] before:top-8 md:before:top-12">LATEST BLOG</h2>
+           
         </div>
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <article key={post.id} className="group cursor-pointer">
+            <article key={post.id} className="group cursor-pointer bg-neutral  p-5 rounded-xl">
               {/* Image */}
               <div className="mb-6 overflow-hidden rounded-lg">
                 <img

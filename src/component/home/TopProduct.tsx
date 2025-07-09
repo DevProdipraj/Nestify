@@ -20,7 +20,7 @@ const TopProduct = () => {
   return (
     <div>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-7 lg:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2 md:10 lg:mt-10">
           {images.map((item) => (
             <div key={item.id} className="">
               <Image

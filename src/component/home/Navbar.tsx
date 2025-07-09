@@ -15,19 +15,21 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="shadow-md md:py-4">
+      <div className="shadow-md md:py-4 bg-white ">
         <div className="container relative">
           {/* Top Navbar */}
           <div className="flex items-center justify-between md:mx-6">
             <div className="hidden md:block">
-              <Image
-                src="/brandicon.png"
-                width={200}
-                height={100}
-                className="w-[180px] h-[75px]"
-                alt="Brand Icon"
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="/brandicon.png"
+                  width={200}
+                  height={100}
+                  className="w-[180px] h-[75px]"
+                  alt="Brand Icon"
+                  priority
+                />
+              </Link>
             </div>
 
             <div className="md:hidden">
@@ -48,11 +50,20 @@ const Navbar = () => {
                     size={25}
                     className="text-[#6a6a6a] font-bold cursor-pointer"
                   />
-                  <FiHeart size={25} className="text-[#6a6a6a] font-bold cursor-pointer" />
+                  <FiHeart
+                    size={25}
+                    className="text-[#6a6a6a] font-bold cursor-pointer"
+                  />
                 </div>
               </div>
-              <IoCartOutline size={25} className="text-[#6a6a6a] font-bold cursor-pointer" />
-              <FaRegUser size={25} className="text-[#6a6a6a] font-bold cursor-pointer" />
+              <IoCartOutline
+                size={25}
+                className="text-[#6a6a6a] font-bold cursor-pointer"
+              />
+              <FaRegUser
+                size={25}
+                className="text-[#6a6a6a] font-bold cursor-pointer"
+              />
             </div>
 
             {/* Hamburger Button */}
