@@ -91,7 +91,7 @@ const Navbar = () => {
               className="md:hidden cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <RiMenu2Line size={25} />
+              <RiMenu2Line size={25} className="text-dark" />
             </div>
           </div>
 
@@ -107,7 +107,7 @@ const Navbar = () => {
                 { name: "Contact", href: "/contact" },
               ].map((item, index) => (
                 <li key={index} className="relative group overflow-hidden">
-                  <Link href={item.href} className="inline-block">
+                  <Link href={item.href} className="inline-block text-dark">
                     {item.name}
                   </Link>
                   <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full"></span>
