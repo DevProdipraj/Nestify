@@ -37,7 +37,6 @@ const Navbar = () => {
     <nav className={`sticky top-0 z-50 transform transition-transform duration-300 ease-in-out ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
       <div className={`shadow-md md:py-4 bg-white ` }>
         <div className="container relative">
-          {/* Top Navbar */}
           <div className="flex items-center justify-between md:mx-6">
             <div className="hidden md:block">
               <Link href="/">
@@ -103,7 +102,6 @@ const Navbar = () => {
                 { name: "Product", href: "/product" },
                 { name: "About", href: "/about" },
                 { name: "Blogs", href: "/blog" },
-                { name: "Seller", href: "/seller" },
                 { name: "Contact", href: "/contact" },
               ].map((item, index) => (
                 <li key={index} className="relative group overflow-hidden">
@@ -146,7 +144,6 @@ const Navbar = () => {
                 { name: "Product", href: "/product" },
                 { name: "About", href: "/about" },
                 { name: "Blogs", href: "/blog" },
-                { name: "Seller", href: "/seller" },
                 { name: "Contact", href: "/contact" },
               ].map((item) => (
                 <li key={item.name} onClick={() => setIsOpen(false)}>
