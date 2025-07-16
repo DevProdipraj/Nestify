@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import HeroArea from "@/component/home/HeroArea";
 import TopProduct from "@/component/home/TopProduct";
@@ -17,7 +19,7 @@ const Home = () => {
       <ShowCase />
       <Blog />
       <Clients />
-      <Review />
+      <Review /> 
     </div>
   );
 };

@@ -9,13 +9,13 @@ import {
 const ContackForm = () => {
   return (
     <div>
-      <div className="container py-10">
+      <div className="container py-10 md:py-16">
         <div className=" md:flex items-center space-x-6 ">
             {/* contact text  */}
           <div className="w-4/6  ">
             <div className="">
               <h1 className="text-5xl font-bold">Get In Touch</h1>
-              <p className="text-md  py-8  ">
+              <p className="text-md py-8   lg:w-[85%] ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusamus illo dolores voluptas autem veniam corporis explicabo
                 enim commodi excepturi eius! Ipsum eligendi perferendis
@@ -26,50 +26,50 @@ const ContackForm = () => {
             <div className="">
               <div className="flex space-x-4">
                 <button className="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <FaFacebookF className="w-4 h-4 text-gray-600" />
+                  <FaFacebookF className="w-4 h-4 text-gray-600 cursor-pointer" />
                 </button>
                 <button className="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <FaTwitter className="w-4 h-4 text-gray-600" />
+                  <FaTwitter className="w-4 h-4 text-gray-600 cursor-pointer" />
                 </button>
                 <button className="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <FaInstagram className="w-4 h-4 text-gray-600" />
+                  <FaInstagram className="w-4 h-4 text-gray-600 cursor-pointer" />
                 </button>
                 <button className="w-8 h-8 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors duration-200">
-                  <FaPinterestP className="w-4 h-4 text-gray-600" />
+                  <FaPinterestP className="w-4 h-4 text-gray-600 cursor-pointer" />
                 </button>
               </div>
             </div>
           </div>
           {/* contact form  */}
-          <div className="w-6/6 bg-neutral py-8 px-12 rounded-xl">
+          <div className="w-6/6 bg-neutral py-12 px-10 rounded-md">
             <form action="#">
-              <div className="">
-                <label htmlFor="">Full Name</label><br />
-                <input type="text" name="userName" id="userName" />
+              <div className="mb-2 ">
+                <label className="text-md text-gray-500 font-bold " htmlFor="">Full Name</label><br />
+                <input className="w-full bg-white  py-2.5 my-3 px-3.5 focus:outline-1.5 outline-primary" placeholder="Enter Full Name" type="text" name="userName" id="userName" />
               </div>
-              <div className="md:flex items-center justify-between">
-                <div className="">
-                  <label htmlFor="">Email</label><br />
-                  <input type="email" name="userEmail" id="userEmail" />
+              <div className="md:flex items-center justify-center space-x-6 mb-2 ">
+                <div className="w-1/2">
+                  <label className="text-md text-gray-500 font-bold " htmlFor="">Email Address</label><br />
+                  <input className="w-full bg-white py-2.5 my-1.5 px-3.5 focus:outline-1.5 outline-primary" placeholder="Enter Your Email"  type="email" name="userEmail" id="userEmail" />
                 </div>
-                <div className="">
-                  <label htmlFor="">Phone</label><br />
-                  <input type="text" name="userPhone" id="userPhone" />
+                <div className="w-1/2">
+                  <label className="text-md text-gray-500 font-bold  " htmlFor="">Phone Number</label><br />
+                  <input className="w-full bg-white py-2.5 my-1.5 px-3.5 focus:outline-1.5 outline-primary" placeholder="Enter Your Phone" type="text" name="userPhone" id="userPhone" />
                 </div>
               </div>
-              <div className="">
-                <label htmlFor="Subject">Subject</label><br />
-                <input className="w-full" type="text" name="subject" id="subject" />
+              <div className="mb-2 ">
+                <label className="text-md text-gray-500 font-bold " htmlFor="Subject">Subject</label><br />
+                <input className="w-full bg-white py-2.5 my-3 px-3.5 focus:outline-1.5 outline-primary"  placeholder="Enter Subject" type="text" name="subject" id="subject" />
               </div>
               <div className="">
-                <label htmlFor="">Message</label> <br />
-                <textarea className="w-full bg-white  outline-none" name="userMassage" id="userMassage"></textarea>
+                <label className="text-md text-gray-500 font-bold " htmlFor="">Message</label> <br />
+                <textarea className="w-full bg-white py-2.5 my-3 px-3.5 focus:outline-1.5 outline-primary min-h-[150px] resize-y " placeholder="Type Your Message" name="userMassage" id="userMassage"></textarea>
               </div>
-              <input type="submit" value="Send Your Message" />
+              <input className="bg-primary px-4 py-3 rounded-md text-white font-bold cursor-pointer focus:outline-4 outline-white" type="submit" value="Send Your Message" />
             </form>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-6 py-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-6 py-5 lg:py-18 ">
             <div className="flex items-center bg-neutral px-8 py-4 rounded-sm">
                 <div className="bg-white p-4">Icon</div>
                 <div className="ms-4">

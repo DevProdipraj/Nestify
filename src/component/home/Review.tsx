@@ -1,6 +1,5 @@
 "use client"
-
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { FaChevronLeft, FaChevronRight, FaStar, FaQuoteLeft } from "react-icons/fa"
 
 const reviews = [
@@ -58,6 +57,11 @@ const reviews = [
 
 export default function ReviewsSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length)
@@ -75,6 +79,10 @@ export default function ReviewsSlider() {
     return [...Array(5)].map((_, index) => (
       <FaStar key={index} className={`w-4 h-4 ${index < rating ? "text-primary" : "text-gray-300"}`} />
     ))
+  }
+
+  if (!isClient) {
+    return null
   }
 
   return (

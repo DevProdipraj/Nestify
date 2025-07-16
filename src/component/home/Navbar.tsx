@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -100,8 +100,8 @@ const Navbar = () => {
               {[
                 { name: "Home", href: "/" },
                 { name: "Product", href: "/product" },
-                { name: "About", href: "/about" },
                 { name: "Blogs", href: "/blog" },
+                { name: "About", href: "/about" },
                 { name: "Contact", href: "/contact" },
               ].map((item, index) => (
                 <li key={index} className="relative group overflow-hidden">

@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -16,7 +18,7 @@ export default function Footer() {
       <div className=" md:container">
         {/* Newsletter Section */}
         <div className=" mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <div className="bg-neutral rounded-lg p-8 shadow-sm">
+          <div className=" rounded-lg p-8 shadow-md">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
               <div className="text-center lg:text-left">
                 <h2 className="text-xl md:text-2xl font-bold text-dark  mb-2">
