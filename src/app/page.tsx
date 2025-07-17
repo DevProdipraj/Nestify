@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
 
-      <HeroArea />
+      {/* <HeroArea /> */}
       <TopProduct />
       <SpecialProducts />
       <ShowCase />
