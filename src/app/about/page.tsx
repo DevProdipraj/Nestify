@@ -10,8 +10,8 @@ const page = () => {
           About Nestify Furniture
         </h2>
       </div>
-      <div className="mt-10 lg:mt-16">
-        <p className="my-4 text-md">
+      <div className="mt-8 md:mt-10 lg:mt-16">
+        <p className="my-4  text-sm md:text-md">
           At<strong className="text-primary"> Nestify </strong>
           User Furniture, we understand that furniture is not just a necessity —
           it’s an essential part of how you express yourself, how you build your
@@ -24,7 +24,7 @@ const page = () => {
           needs, reflect your personality, and enhance your daily living
           experience.
         </p>
-        <p className="my-4 text-md">
+        <p className="my-4 text-sm md:text-md">
           Our diverse range of products includes everything from luxurious
           sofas, elegant dining sets, and ergonomic office furniture to
           functional storage solutions and chic bedroom collections. Every item
@@ -33,7 +33,7 @@ const page = () => {
           collaborate with skilled artisans to ensure that our furniture not
           only looks beautiful but also stands the test of time.
         </p>
-        <p className="my-4 text-md">
+        <p className="my-4 text-sm md:text-md">
           At the heart of User Furniture is our belief that great furniture can
           transform any space — turning houses into homes and workspaces into
           places of inspiration and productivity. We are proud to serve a wide
@@ -42,30 +42,30 @@ const page = () => {
           and enjoyable for our customers to create the living spaces they’ve
           always dreamed of.
         </p>
-        <p className="my-4 text-md">
+        <p className="my-4 text-sm md:text-md">
           Whether you’re decorating your first home, redesigning a modern
           workspace, or simply looking for that perfect statement piece, User
           Furniture is here to help you make every space uniquely yours.
         </p>
       </div>
 
-      <section className="py-10 lg;px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="flex items-center justify-center space-x-3 bg-neutral w-[75%] py-8 rounded-md">
+      <section className=" md:py-10 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex items-center justify-center space-x-3 bg-neutral w-full md:w-[75%] px-4 py-8 rounded-md">
             <ImTruck className="h-12 w-12 text-primary" />
             <div className="">
             <h2 className="text-xl">Free Shipping</h2> 
             <p className="text-sm">Free Shipping</p>
             </div>
           </div>
-          <div className="flex items-center justify-center space-x-3 bg-neutral w-[75%] py-8 rounded-md">
+          <div className="flex items-center justify-center space-x-3 bg-neutral w-full md:w-[75%] px-4 py-8 rounded-md">
             <BsFillClockFill className="h-12 w-12 text-primary" />
             <div className="">
             <h2 className="text-xl">24 X 7 Service</h2> 
             <p className="text-sm">Online Service For New Customer</p>
             </div>
           </div>
-          <div className="flex items-center justify-center space-x-3 bg-neutral w-[75%] py-8 rounded-md">
+          <div className="flex items-center justify-center space-x-3 bg-neutral w-full md:w-[75%] px-4 py-8 rounded-md">
             <IoMegaphone className="h-12 w-12 text-primary rotate-320" />
             <div className="">
             <h2 className="text-xl">Festival Offer</h2> 

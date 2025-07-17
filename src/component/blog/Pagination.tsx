@@ -12,7 +12,7 @@ const Pagination = ({ currentPage, totalPages }: PaginationProps) => {
       <nav className="flex items-center gap-2">
         <Link
           href={`?page=${currentPage - 1}`}
-          className={`px-4 py-2 rounded-md border ${
+          className={`px-4 py-2 rounded-md border hidden md:block ${
             currentPage === 1 ? "pointer-events-none opacity-50" : "hover:bg-gray-100"
           }`}
         >
@@ -36,7 +36,7 @@ const Pagination = ({ currentPage, totalPages }: PaginationProps) => {
 
         <Link
           href={`?page=${currentPage + 1}`}
-          className={`px-4 py-2 rounded-md border ${
+          className={`px-4 py-2 rounded-md border hidden md:block ${
             currentPage === totalPages ? "pointer-events-none opacity-50" : "hover:bg-gray-100"
           }`}
         >
